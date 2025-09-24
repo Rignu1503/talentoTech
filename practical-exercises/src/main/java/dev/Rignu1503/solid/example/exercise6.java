@@ -1,11 +1,9 @@
 package dev.Rignu1503.solid.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-
 public class exercise6 {
 
-        public ArrayList[] negativeVector( int[] vector){
+        public ArrayList<Integer> negativeVector( int[] vector){
 
         ArrayList<Integer> negative = new ArrayList<>();
 
@@ -17,13 +15,13 @@ public class exercise6 {
             
         }
 
-        return new ArrayList[]{negative};
+        return negative;
     }
 
     public static void main(String[] args) {
 
         exercise6 iv = new exercise6();
-        System.out.println(Arrays.toString(iv.negativeVector(new int[]{1,2,-3,4,-5,6,7,8})));
+        System.out.println(iv.negativeVector(new int[]{1,2,-3,4,-5,6,7,8})); //salida [[-3, -5]]
 
     }
     

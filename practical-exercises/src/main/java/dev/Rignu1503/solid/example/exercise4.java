@@ -1,38 +1,36 @@
 package dev.Rignu1503.solid.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class exercise4 {
     
-    public ArrayList[] primeNumbera( int[] vector){
+    public ArrayList<Integer> primeNumbera( int[] vector){
 
         ArrayList<Integer> prime = new ArrayList<>();
 
-        for(int i = 0;vector.length > i; i++){ 
-           
-            int pairInterador = 0;
+        for(int i = 0;vector.length > i; i++){
+            int num = vector[i];
+            int divisorCount = 0;
 
-            for( int j = 0; i >= j; j++){
-
-                if (j % 2 == 0) {
-                    pairInterador++;
+            for (int j = 1; j <= num; j++) {
+                if (num % j == 0) {
+                    divisorCount++;
                 }
+                
             }
 
-            if (pairInterador == 2) {
-                prime.add(i);
-            }
-            pairInterador = 0;
+            if (divisorCount == 2) {
+                prime.add(num);
+            } 
         }
 
-        return new ArrayList[]{prime};
+        return prime;
     }
 
      public static void main(String[] args) {
 
         exercise4 pn = new exercise4();
-        System.out.println(Arrays.toString(pn.primeNumbera(new int[]{1,2,3,4,5,6,7,8})));
+        System.out.println(pn.primeNumbera(new int[]{1,2,3,4,5,6,7,8})); //Salida: [2, 3, 5, 7]
 
     }
 }

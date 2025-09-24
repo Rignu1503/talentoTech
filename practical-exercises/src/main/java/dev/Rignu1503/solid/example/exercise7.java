@@ -1,11 +1,10 @@
 package dev.Rignu1503.solid.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class exercise7 {
     
-    public ArrayList[] multiplesTwo(){
+    public ArrayList<Integer> multiplesTwo(){
 
         ArrayList<Integer> multiples = new ArrayList<>();
 
@@ -16,12 +15,12 @@ public class exercise7 {
             number = i * 2;
             multiples.add(number);
         }
-        
-        return new ArrayList[]{multiples};
+        //Retorno mejor una lista con todos los multiplos para no saturar la consola
+        return multiples;
     }
 
     public static void main(String[] args) {
         exercise7 mt = new exercise7();
-        System.out.println(Arrays.toString(mt.multiplesTwo()));
+        System.out.println(mt.multiplesTwo());  //
     }
 }

@@ -18,7 +18,8 @@ public class exercise5 {
     public static void main(String[] args) {
         
         exercise5 pv = new exercise5();
-        System.out.println(pv.positionVector(new int[]{1,2,3,42,5,6,7,8}, 42));
+        System.out.println(pv.positionVector(new int[]{1,2,3,42,5,6,7,8}, 42)); //salida: La posicion del numero es 4
+        System.out.println(pv.positionVector(new int[]{1,2,3,42,5,6,7,8}, 76)); //salida: el numero no exite
     }
 }
 
