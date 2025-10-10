@@ -1,4 +1,4 @@
-package dev.Rignu1503.talentoTech.Model;
+package dev.Rignu1503.talentoTech.Zoo.Model;
 
 import javax.swing.*;
 

@@ -1,6 +1,6 @@
-package dev.Rignu1503.talentoTech;
+package dev.Rignu1503.talentoTech.Zoo;
 
-import dev.Rignu1503.talentoTech.Model.Animal;
+import dev.Rignu1503.talentoTech.Zoo.Model.Animal;
 
 public class Gato  extends Animal {
     public Gato(String name, int age) {
